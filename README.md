@@ -1,6 +1,6 @@
 # COS316, Assignment 5: Connection Pool
 
-## Due: 11/11 at 23:00 Princeton time
+## Due: 11/11 at 23:00 Princeton Time
 
 ## Background
 
