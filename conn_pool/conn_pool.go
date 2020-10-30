@@ -16,6 +16,8 @@ type Pool struct {
 // NewPool creates a new connection pool with connections to a database.
 // It takes as input a function that actually establishes connections with
 // the underlying database.
+// Establishing a connection to a database might fail, in which case NewPool
+// propagates the error from the underlying driver to its caller.
 func NewPool(newConnection func() (Conn, error)) (*Pool, error) {
 	return &Pool {}, nil
 }

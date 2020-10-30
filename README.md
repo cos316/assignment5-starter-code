@@ -1,6 +1,6 @@
 # COS316, Assignment 5: Connection Pool
 
-## Due: December 3 at 23:00
+## Due: 11/11 at 23:00 Princeton time
 
 ## Background
 
@@ -43,6 +43,8 @@ type Conn interface {
 // NewPool creates a new connection pool with connections to a database.
 // It takes as input a function that actually establishes connections with
 // the underlying database.
+// Establishing a connection to a database might fail, in which case NewPool
+// propagates the error from the underlying driver to its caller.
 func NewPool(newConnection func() (Conn, error)) (*Pool, error)
 
 // Open returns a connection from the connection pool. It should only return a
