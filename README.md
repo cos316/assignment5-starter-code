@@ -1,6 +1,6 @@
 # COS316, Assignment 5: Connection Pool
 
-## Due: [Date TBD] at [Time TBD]
+## Due: April 13th at 11:00pm
 
 ## Background
 
